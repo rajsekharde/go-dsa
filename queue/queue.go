@@ -1,4 +1,7 @@
-// Queue implemented as a singly linked list
+/*
+Queue implementation as a singly linked list.
+Performs Push, Pop and Front operations in O(1) time.
+*/
 package queue
 
 import "fmt"
@@ -77,10 +80,11 @@ func (q *Queue[T]) Size() int {
 	return q.size
 }
 
-// Prints all the elements of the queue
+// Prints all the elements of the queue from front to back
 func (q *Queue[T]) Display() {
 	if q.size == 0 {
 		fmt.Println("Empty Queue")
+		return
 	}
 
 	temp := q.head
