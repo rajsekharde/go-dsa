@@ -22,6 +22,9 @@ func main() {
 
 Stack:
 ```bash
+go get github.com/rajsekharde/go-dsa/stack
+```
+```bash
 import "github.com/rajsekharde/go-dsa/stack"
 
 func main() {
@@ -31,5 +34,21 @@ func main() {
     s.Push(20)
     f1, res := s.Top()
     f2, res := s.Pop()
+}
+```
+
+Hash Set:
+```bash
+go get github.com/rajsekharde/go-dsa/hashset
+```
+```bash
+import "github.com/rajsekharde/go-dsa/hashset"
+
+func main() {
+    s := hashset.NewHashSet[int]()
+
+    s.Add(10)
+    s.Add(25)
+    fmt.Println(s.Contains(10))
 }
 ```
